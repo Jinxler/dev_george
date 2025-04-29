@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>vinnyApp</title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+author: Jackson Hyche
+-->
+<nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">DVU</div>
+      <div class="page-title">The Daily Vinny Update</div>
+    </div>
+
+    <div class="nav-right">
+      <button class="btn btn-light" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </div>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="https://github.com/Jinxler" target="_blank">GitHub Profile</a>
+      <a href="https://github.com/Jinxler/dev_george" target="_blank">Source Code</a>
+      <a href="https://validator.nu/#file" target="_blank">Nu</a>
+      <a href="https://wave.webaim.org/report#/yourwebsite.com" target="_blank">WAVE</a>
+    </div>
+  </nav>
+
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form id="loginForm">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameInput" required>
+              </div>
+              <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input type="password" class="form-control" id="passwordInput" required>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<h1>Daily Vinny Update</h1>
+   <p>This is a blog to document my encounters with the "<a href='https://una.edu/index.html'>UNA</a> alley cat", Vinny!<p>
+    
+   <img src="https://github.com/Jinxler/vinnyApp/blob/main/20250121_103815.jpg?raw=true"      alt="vinnyOne" width="400">
+    
+  <p>01/14/25</p>
+  
+  <p>Today, Vinny was bathing in the sun. He was very sleepy.</p>
+  
+  <p>Daily quote from Vinny - <em>"I have a dream that one day UNA will have more parking."</em>.</p>
+  
+<main class="container my-5">
+  <h1>New Submission:</h1>
+
+  <div id="dataList" class="list-group my-3">
+  </div>
+  
+  <form id="dataForm" class="mb-3">
+    <input type="hidden" id="dataId" value="">
+    <div class="mb-2">
+      <label for="titleInput" class="form-label">Title:</label>
+      <input type="text" class="form-control" id="titleInput" required>
+    </div>
+    <div class="mb-2">
+      <label for="descriptionInput" class="form-label">Description:</label>
+      <textarea class="form-control" id="descriptionInput" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <button type="button" class="btn btn-secondary" id="loadSampleBtn">Load Sample Data</button>
+  </form>
+
+  <button id="exportBtn" class="btn btn-outline-primary">Export Data to Console</button>
+</main>
+  
+  <br><br>
+  
+    <h1> Where can you find Vinny?</h1>
+    
+  <p>On the <strong><a href="https://maps.app.goo.gl/G2CegdE7JcFAuNjK6">Parking Lot Z</a></strong> path!<p>
+<br>
+  Link to original <a href='https://codepen.io/Jinxler/pen/PwYeyyY'>CodePen</a>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.3/jsoneditor.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
